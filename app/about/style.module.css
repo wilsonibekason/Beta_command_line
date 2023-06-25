@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+d .heading {
+  font-size: xx-large;
+  color: red;
+  text-align: center;
+}

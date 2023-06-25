@@ -4,6 +4,8 @@ import getUserPost from "@/lib/getUserPost";
 import { Post, User, UserPromise } from "@/types";
 import UserPosts from "./components/UserPosts";
 import { Metadata } from "next";
+import { fetchUser } from "@/lib/fetchUser";
+// import  {notFound} from  "next/" 
 type Params = {
   params: {
     userId: string;
@@ -39,6 +41,7 @@ const UserPage = async ({ params: { userId } }: Params) => {
   const userPost: Promise<Post> = getUserPost(userId);
   //   const [userZ, userPosts] = await Promise.all([userData, userPost]);
   const user = await userData;
+
   return (
     <>
       <p>User details Page</p>
@@ -50,5 +53,12 @@ const UserPage = async ({ params: { userId } }: Params) => {
     </>
   );
 };
+export async function generateStaticParams() {
+  const usersData: Promise<User[]> = fetchUser();
+  const users = await usersData;
+  return users.map((user: User) => {
+    userId: user.id.toString();
+  });
+}
 
 export default UserPage;

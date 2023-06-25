@@ -18,9 +18,11 @@ const UserInfo = async () => {
         <Link href={"/"}>Back to home</Link>
       </p>
       {users &&
-        users.map(({ address, name }: User) => (
+        users.map(({ address, name, id }: User) => (
           <>
-            <h1>{name} </h1>
+          <p>
+          <Link href={`users/${id}`}>{name} </Link>
+          </p>
           </>
         ))}{" "}
     </div>

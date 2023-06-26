@@ -1,3 +1,5 @@
+"use client ";
+
 import { useRouter } from "next/navigation";
 import React, { FormEvent, useState } from "react";
 import tw from "tailwind-styled-components";

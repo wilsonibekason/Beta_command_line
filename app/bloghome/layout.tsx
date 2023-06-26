@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import ProfilePic from "../components/ProfilePic";
-import "./globals.css";
 
 export default function RootLayout({
   children,

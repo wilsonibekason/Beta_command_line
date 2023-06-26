@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from "tailwind-styled-components";
 
 const ProfilePic = () => {
   const SectionLayout = tw.section`w-56`;

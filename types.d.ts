@@ -54,4 +54,11 @@ type BlogPost = {
   date: string;
 };
 
-export type { User, Post, UserPromise, SearchResult, Result, BlogPost };
+type Todo = {
+  name: string;
+  descrition: string;
+  completed: Boolean;
+  id: string;
+};
+
+export type { User, Post, UserPromise, SearchResult, Result, BlogPost, Todo };

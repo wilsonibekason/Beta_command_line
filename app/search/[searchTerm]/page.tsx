@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import getWikiResults from "@/lib/getWikiPages";
 import { Result, SearchResult } from "@/types";
 import { Metadata } from "next";
 import Item from "./components/items";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 type Props = {
   params: {
     searchTerm: string;

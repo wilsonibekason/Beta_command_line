@@ -1,5 +1,6 @@
 import { Result } from "@/types";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   result: Result;
@@ -26,12 +27,11 @@ export default function Item({ result }: Props) {
       <div className="flex flex-row gap-4">
         <div className="flex flex-col justify-center">
           {/* @next/next/no-img-element */}
-          <img
+          <Image
             src={result.thumbnail.source}
             alt={result.title}
             width={result.thumbnail.width}
             height={result.thumbnail.height}
-            loading="lazy"
           />
         </div>
         {itemTextCol}

@@ -9,22 +9,23 @@ const Search = () => {
   const handleSearch = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSearch("");
-    router.push(`${search}`);
+    router.push(`/search/${search}`);
   };
 
-  const  SearchInput = tw.input``
+  const SearchInput = tw.input`w-full h-10 mx-30 border border-red-100 shadow-lg   rounded-md  max-w-[70%] px-5`;
+  const SearchLayout = tw.div`flex items-center justify-center w-full`;
 
   return (
-    <div>
+    <SearchLayout>
       <form onSubmit={handleSearch}>
-        <input
+        <SearchInput
           type="text "
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className={cx("")}
         />
       </form>
-    </div>
+    </SearchLayout>
   );
 };
 

@@ -9,7 +9,13 @@ const ProfilePic = () => {
   return (
     <>
       <SectionLayout>
-        <Image src={""} alt={"profile image"} width={200} priority={true} />
+        <Image
+          src={"/wanbek.jpg"}
+          alt={"profile image"}
+          width={200}
+          height={200}
+          priority={true}
+        />
       </SectionLayout>
     </>
   );

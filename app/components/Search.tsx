@@ -15,7 +15,7 @@ const Search = () => {
   };
 
   const SearchInput = tw.input`w-full h-10 mx-30 border border-red-100 shadow-lg   rounded-md  max-w-[70%] px-5`;
-  const SearchLayout = tw.div`flex items-center justify-center w-full`;
+  const SearchLayout = tw.div`w-full`;
 
   return (
     <SearchLayout>

@@ -48,4 +48,10 @@ type SearchResult = {
   };
 };
 
-export type { User, Post, UserPromise, SearchResult, Result };
+type BlogPost = {
+  id: string;
+  title: string;
+  date: string;
+};
+
+export type { User, Post, UserPromise, SearchResult, Result, BlogPost };

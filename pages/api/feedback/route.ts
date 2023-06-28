@@ -13,3 +13,4 @@ export default async function POST(req: Request) {
   const { name, email, message } = data;
   return NextResponse.json({ name, email, message });
 }
+ 

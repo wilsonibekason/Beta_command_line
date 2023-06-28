@@ -1,3 +1,5 @@
+"use client"
+
 import { FormEvent, useState, ChangeEvent } from "react";
 import { useRouter } from "next/navigation";
 
@@ -27,4 +29,10 @@ export default async function Feedback() {
     const result = await res.json();
     console.log(result);
   };
+
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }

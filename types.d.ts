@@ -56,9 +56,10 @@ type BlogPost = {
 
 type Todo = {
   name: string;
-  descrition: string;
-  completed: Boolean;
+  description: string;
+  completed?: boolean;
   id: string;
+  title?: string
 };
 
 export type { User, Post, UserPromise, SearchResult, Result, BlogPost, Todo };
